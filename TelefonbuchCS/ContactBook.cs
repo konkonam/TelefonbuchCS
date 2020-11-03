@@ -35,7 +35,7 @@ namespace TelefonbuchCS
             foreach (Person person in this.contacts)
             {
                 person.print();
-                Console.WriteLine("\n");
+                Console.WriteLine("--------------------");
             }
         }
 
@@ -46,6 +46,7 @@ namespace TelefonbuchCS
                 if (string.Compare(name, person.name) == 0)
                 {
                     person.print();
+
                 }
             } 
         }

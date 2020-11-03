@@ -22,8 +22,14 @@ namespace TelefonbuchCS
                 Console.WriteLine("5 - Exit the Application\n");
 
                 Console.Write("Your choice: ");
-                int selection = Convert.ToInt32(Console.ReadLine());
-                
+                string selectionStr = Console.ReadLine();
+
+                int selection = 0;
+                if(Int32.TryParse(selectionStr, out selection))
+                {
+                    selection = Convert.ToInt32(selectionStr);
+                }
+
                 string name = "";
 
                 switch (selection)
